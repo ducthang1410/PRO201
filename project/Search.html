@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Search page</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="Css/Main.css">
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<header>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="Main.html"><img src="images/logo2.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="Main.html">Main page<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Events.html">Events</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="computer.html">PC</a>
+		</li>
+        <li class="nav-item">
+        <a class="nav-link" href="laptop.html">Laptop</a>
+		</li>
+	  <li class="nav-item">
+        <a class="nav-link" href="dienThoai.html">Smartphone</a>
+		</li>
+	  <li class="nav-item"> </li>
+		  <li class="nav-item">
+        <a class="nav-link" href="Contactus.html">Contact us</a>
+		</li>
+   <li class="nav-item">
+        <a class="nav-link" href="Login.html">Sign In</a>
+		</li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" action="Search.html">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <a class="nav-link text-white btn-danger alert-link" href="Search.html">Search</a>
+    </form>
+  </div>
+</nav>
+	</header>
+<div class="search">
+	<div class="container">
+<h2>Search Menu</h2>
+<p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Asus</a></li>
+  <li><a href="#">Dell</a></li>
+  <li><a href="#">Lenovo</a></li>
+  <li><a href="#">Apple</a></li>
+  <li><a href="#">HP</a></li>
+  <li><a href="#">Samsung</a></li>
+  <li><a href="#">Nokia</a></li>
+</ul>
+</div>
+</div>
+
+<hr>
+<div class="container">
+  <div class="row">
+<div class="col-xs-6 col-sm-6 col-lg-4 col-md-4"> <span class="text-right">
+      </span>
+  <h3>About us</h3>
+  <hr>
+  <p>Founded in June 1999, Red Dragon has been growing and developing in the field of business products, computer components, office equipment, communications and entertainment. world top production.</p>
+  <p>With the continuous efforts of the red dragon collective and by the SINCERITY - DEVOTION - PROFESSION in the business, over the years Red Dragon has continuously achieved great achievements and gained many consumer's trust.</p>
+</div>
+<div class="col-xs-6 col-sm-6 col-lg-4 col-md-4 hidden-sm hidden-xs"> <span class="text-right"> </span>
+  <h3>Support Assistants</h3>
+  <hr>
+  <div class="media-object-default">
+  <div class="media">
+  <div class="media-body">
+            <h4 class="media-heading">Duc Thang Nguyen</h4>
+    <abbr title="Phone">P:</abbr> (123) 456-7890 <a href="mailto:#">thangdeptrai14@gmail.com</a> </div>
+      <div class="media-right"><a> <img class="media" src="images/tradesman-shopkeeper-salesman-dealer-storekeeper-agent-businessperson-broker-3215f065fad4ca71-512x512.png" alt="placeholder image"></a></div>
+</div>
+<div class="media">
+  <div class="media-body">
+    <h4 class="media-heading">Nhut Khoa Nguyen</h4>
+            <abbr title="Phone">P:</abbr> (123) 456-7890 <a href="mailto:#">khoadeptrai14@gmail.com</a> </div>
+  <div class="media-right"><a> <img class="media" src="images/tradesman-shopkeeper-salesman-dealer-storekeeper-agent-businessperson-broker-3215f065fad4ca71-512x512.png" alt="placeholder image"></a></div>
+</div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-6 col-lg-4 col-md-4"> <span class="text-right"> </span>
+  <h3>Contact </h3>
+  <hr>
+
+    <address>
+      <strong>Red Dragon, Inc.</strong><br>
+      Viet Nam Treasure Link<br>
+      Quitman, WA, 99110-0219<br>
+  <abbr title="Phone">P:</abbr> 18009895
+      </address>
+
+      <address>
+        <strong>Full Name</strong><br>
+        <a href="mailto:#">RedDragon.Inovation@gmail.com</a>
+      </address>
+</div>
+  </div>
+</div>
+
+<footer class="w3-center w3-black w3-padding-16">
+  <a href="Search.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Copyright © Red Dragon. All rights reserved.</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
